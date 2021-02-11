@@ -118,7 +118,7 @@ env.Append(
 #
 
 if (
-    build_core in ("MiniCore", "MegaCore", "MightyCore", "MajorCore")
+    build_core in ("MiniCore", "MegaCore", "MightyCore", "MajorCore", "ButterflyCore")
     and board.get("hardware.uart", "uart0") != "no_bootloader"
 ):
     upload_section = board.get("upload")

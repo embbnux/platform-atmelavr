@@ -61,7 +61,7 @@ if env.get("PIOFRAMEWORK", []):
     )
 
 bootloader_path = board.get("bootloader.file", "")
-if core in ("MiniCore", "MegaCore", "MightyCore", "MajorCore"):
+if core in ("MiniCore", "MegaCore", "MightyCore", "MajorCore", "ButterflyCore"):
     if not isfile(bootloader_path):
         bootloader_path = get_suitable_optiboot_binary(framework_dir, board)
 else:

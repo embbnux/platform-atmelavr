@@ -393,6 +393,7 @@ if (not lfuse or not hfuse) and core not in (
     "MightyCore",
     "MajorCore",
     "MicroCore",
+    "ButterflyCore"
 ):
     sys.stderr.write(
         "Error: Dynamic fuses generation for %s is not supported."
@@ -400,7 +401,7 @@ if (not lfuse or not hfuse) and core not in (
     )
     env.Exit(1)
 
-if core in ("MiniCore", "MegaCore", "MightyCore", "MajorCore", "MicroCore"):
+if core in ("MiniCore", "MegaCore", "MightyCore", "MajorCore", "MicroCore", "ButterflyCore"):
     f_cpu = board.get("build.f_cpu", "16000000L").upper()
     oscillator = board.get("hardware.oscillator", "external").lower()
     bod = board.get("hardware.bod", "2.7v").lower()
