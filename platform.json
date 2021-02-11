@@ -101,6 +101,10 @@
       "owner": "platformio",
       "version": "~2.0.0"
     },
+    "framework-arduino-avr-butterflycore": {
+      "type": "framework",
+      "optional": true
+    },
     "framework-arduino-avr-nicai": {
       "type": "framework",
       "optional": true,
